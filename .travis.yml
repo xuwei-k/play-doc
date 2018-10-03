@@ -12,12 +12,8 @@ scala:
 - 2.12.4
 - 2.13.0-M3
 jdk:
-- oraclejdk8
 - oraclejdk11
 script: sbt ++$TRAVIS_SCALA_VERSION test
-branches:
-  only:
-  - master
 cache:
   directories:
   - "$HOME/.ivy2/cache"
